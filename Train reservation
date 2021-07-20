@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservtion Form</title>
+    <style>
+        .box{
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Reservation Form</h1>
+        <form>
+            <label>Full Name</label><br>
+            <input type="text" placeholder="First Name Last Name"><br>
+            <label>Email</label><br>
+            <input type="text" placeholder="Email_Address"><br>
+            <label>Mobile</label><br>
+            <input type="number" placeholder="Mob_Num"><br><br>
+            <label>Select your package</label><br>
+            <select name="package">
+                <option value="Goa">Goa</option>
+                <option value="Malvan">Malvan</option>
+                <option value="Shimla">Shimla</option>
+            </select><br><br>
+            <label>Arrival Date</label><br>
+            <input type="date" placeholder="d/m/Y"><br><br>
+            <label>Number of Person</label><br>
+            <input type="number" placeholder="UNKNOWN_TYPE"><br><br>
+            <label>What would you want to avail?</label><br>
+            Boarding<input type="checkbox"><br>
+            Fooding<input type="checkbox"><br>
+            Sight Seeing<input type="checkbox"><br><br>
+            <label>Discount coupon code</label><br>
+            <input type="text" placeholder="UNKNOWN_TYPE"><br><br>
+            <label>Terms & Conditions</label><br>
+            <input type="radio" name="r">I Agree
+            <input type="radio" name="r">I Disagree<br><br>
+            <button type="submit" value="submit">Confirm Reservation</button>
+        </form>
+    </div>
+</body>
+</html>
