@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+    <style>
+        h1{
+            font-size: xx-large;
+        }
+        body
+        {
+            background-image: url(solid2.jpg);background-repeat: no-repeat ;background-size: cover;
+         
+        }
+        p{
+            font-style: normal;
+            font-size: larger;
+           
+        }
+        
+        }
+    </style>
+</head>
+<body>
+<form action="">
+  <center>  <h1>Payment Window </h1></center>
+    <h2>Contact information</h2>
+    <p>Required Fields *</p>
+    <p>Name On Card: * <input type="text" name="Name" required></p> 
+    <p><fieldset>
+        <legend>Gender</legend>
+        Male <input type="radio" name="Gender" required>
+        Female <input type="radio" name="Gender" required >
+        Others <input type="radio" name="Gender" required >
+    </fieldset>
+    </p>
+    <p>Address : * <textarea name="Address" id="Address" cols="100" rows="10" required></textarea></p>
+    <p>Email: <input type="email" name="email" id="email" ></p>
+    <p>Pincode: *  <input type="number" name="pincode" id="pincode" required></p>
+    <hr>
+    <h2>Payement info</h2>
+    <p>Card Type: *
+        <select name="Card_type" id="Card_type" required>
+            <option value="">---SELECT A CARD---</option>
+            <option value="VISA">VISA</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="RuPay">Rupay</option>
+        </select>
+        <div class="form-group" id="credit_cards">
+            <img src="visa.jpg" id="visa" style="width: 78px;height: 79px;">
+            <img src="mstc.jpg" id="mastercard" style="width: 78px;height: 79px;">
+            <img src="R (1).jpg" id="amex" style="width: 78px;height: 79px;">
+        </div>
+    </p>
+    <label for="ccn">Credit Card Number:</label>
+<input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+    <div class="form-group" id="expiration-date" required>
+        <label>Expiration Date</label>
+        <select>
+            <option value="01">January</option>
+            <option value="02">February </option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <select>
+            <option value="16"> 2016</option>
+            <option value="17"> 2017</option>
+            <option value="18"> 2018</option>
+            <option value="19"> 2019</option>
+            <option value="20"> 2020</option>
+            <option value="21"> 2021</option>
+        </select>
+    </div>
+    
+    <p>CVV: * <input type="password" name="cvv" id="cvv" required style="box: sizing 18px;;"></p>
+    <input type="submit" value="Book ticket" >
+
+</form>
+
+    
+</body> 
+</html>
